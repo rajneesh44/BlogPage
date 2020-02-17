@@ -1,8 +1,8 @@
 <template>
   <div>
-      <h3>{{ name }}</h3>
-      <p>{{ blog }}</p>
-      <h3>{{ title }}</h3>
+      <h1 class="font-weight-thin">{{ title }}</h1>
+      <p class="font-weight-light mt-5">{{ blog }}</p>
+      <h4 class="font-weight-normal">{{ name }}</h4>
   </div>
 </template>
 
@@ -10,7 +10,7 @@
 import { db } from '../main.js'
 
 export default {
-    name: 'name',
+    name: 'Single',
     data(){
         return{
             blog: null,
